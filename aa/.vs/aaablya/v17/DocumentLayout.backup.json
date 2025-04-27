@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\views\\teamfordisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:views\\teamfordisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\views\\teamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:views\\teamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\models\\soupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:models\\soupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|c:\\users\\user\\storage\\courses\\\u043F\u0430\u043F\u0441\\rlr\\aaablya\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6043BC3B-3343-4E95-B238-FCCECBADB9BA}|aaablya.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 119,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeamsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Controllers\\TeamsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TeamsController.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Controllers\\TeamsController.cs",
+              "RelativeToolTip": "Controllers\\TeamsController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwDQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:33:20.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeamForDisplayDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Views\\TeamForDisplayDto.cs",
+              "RelativeDocumentMoniker": "Views\\TeamForDisplayDto.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Views\\TeamForDisplayDto.cs",
+              "RelativeToolTip": "Views\\TeamForDisplayDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:30:43.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeamDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Views\\TeamDto.cs",
+              "RelativeDocumentMoniker": "Views\\TeamDto.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Views\\TeamDto.cs",
+              "RelativeToolTip": "Views\\TeamDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:30:15.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:28:42.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "Models\\Team.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\Team.cs",
+              "RelativeToolTip": "Models\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:28:41.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SoupDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\SoupDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\SoupDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\SoupDbContext.cs",
+              "RelativeToolTip": "Models\\SoupDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:28:40.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:28:39.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\User\\storage\\courses\\\u043F\u0430\u043F\u0441\\RLR\\aaablya\\Models\\Notification.cs",
+              "RelativeToolTip": "Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T15:28:39.137Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

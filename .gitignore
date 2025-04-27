@@ -1,0 +1,17 @@
+роли.txt 
+misdc notes.txt
+
+aa\bin\
+aa\obj\
+*.vs\
+*.user
+*.suo 
+
+logs
+*.log
+npm-debug.log*
+build/Release
+node_modules/
+dist/
+.npm
+.eslintcache

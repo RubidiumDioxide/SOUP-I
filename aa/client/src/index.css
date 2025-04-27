@@ -1,0 +1,352 @@
+.app{
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #24292e;
+  color: #a1a1a1; 
+}
+
+.app-div{
+  display: flex;
+  align-items: center; 
+  flex-direction: column; 
+}
+
+p {
+  color: #a1a1a1;
+  text-decoration: none;
+}
+
+
+header {
+  background-color: #24292e;
+  border-bottom: 1px solid #a1a1a1;
+  padding: 16px;
+}
+
+nav {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+nav .nav-link {
+  color: rgb(255, 187, 0);
+  margin-right: 20px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+nav .nav-link:hover {
+  color: #24292e;
+  background-color: rgb(255, 187, 0);
+}
+
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.catalog-div {
+  flex-basis: calc(50% - 20px); /* Два элемента в строке минус отступы */
+  background: #1c2125;
+  margin: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.page-div {
+  flex-basis: calc(50% - 20px); /* Два элемента в строке минус отступы */
+  background: #1c2125;
+  margin: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.catalog-div:hover {
+  color: #1c2125;
+  background: #ffd04e;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.glow {
+    margin: 20px; 
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 0px #ffd04e, 0 0 2px #ffd04e, 0 0 4px #ffbb00;
+    }
+    to {
+      text-shadow: 0 0 0px #24292e, 0 0 8px #24292e, 0 0 20px #24292e;
+    }
+  }
+
+.rounded-select {
+  margin: 5px 2px;
+  padding: 8px 16px;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #24292e;
+  background-color: #ffffff;
+  appearance: none; /* Remove default styling */
+  transition: border-color 0.2s;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="0,0 20,0 10,10" fill="%2324292e"/></svg>'); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px; /* Adjust arrow size */
+}
+
+/* Focus state styling */
+.rounded-select:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 0 2px #0366d533; /* Shadow effect for focus */
+}
+
+/* Disabled state styling */
+.rounded-select:disabled {
+  background-color: #f6f8fa;
+  color: #6a737d;
+  border-color: #d1d5da;
+}
+
+/* Option styles (optional) */
+.rounded-select option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ffffff; /* Customize option background if needed */
+  color: #24292e;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-bottom: 20px; /* Add bottom margin */
+  border-radius: 6px; /* Slightly rounded corners */
+  overflow: hidden; /* Crop anything that exceeds the border-radius */
+}
+
+th, td {
+  padding: 8px 12px; /* Cell padding */
+  text-align: left; /* Align text to the left */
+  color: #c7c8d0;
+}
+
+th {
+  background-color: #ffd04e; 
+  color: #16181a; 
+  font-weight: 600; /* Medium weight for headers */
+  text-transform: capitalize; /* Capitalize the first letter */
+}
+
+/* Style for even rows */
+tbody tr:nth-child(even) {
+  background-color: #24292e;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #1a1e22; /* Light gray background for even rows */
+}
+
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #000000; 
+}
+
+/* Style for last row */
+tbody tr:last-child td {
+  border-bottom: none; 
+}
+
+.page{ 
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #24292e;
+  color: #a1a1a1; 
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;      /* Center vertically */
+  flex-direction: column; 
+  height: 100vh;   
+}
+
+.rounded-button {
+  background-color: #ffbb00; 
+  color: #333; 
+  border: none;
+  border-radius: 6px; 
+  padding: 8px 16px;
+  margin: 10px 2px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.1s; 
+}
+
+.rounded-button:hover {
+  background-color: #ffcb3d; 
+}
+
+.rounded-button:active {
+  transform: scale(0.95); 
+}
+
+.rounded-input { 
+  margin: 5px 2px;
+  padding: 8px 16px;
+  border: 1px solid #d1d5da; 
+  border-radius: 6px; 
+  font-size: 16px; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+  color: #24292e; 
+  background-color: #ffffff; 
+  transition: border-color 0.2s; 
+}
+
+/* Focus state styling */
+.rounded-input:focus {
+  outline: none; 
+  border-color: #000000; 
+  box-shadow: 0 0 0 2px rgba(3, 102, 213, 0.2); /* Shadow effect for focus */
+}
+
+/* Placeholder styles */
+.rounded-input::placeholder {
+  color: #6a737d; 
+  opacity: 1; 
+}
+
+/* Disabled state styling */
+.rounded-input:disabled {
+  background-color: #f6f8fa; 
+  color: #6a737d; 
+  border-color: #d1d5da; 
+}
+
+
+.small-rounded-button {
+  background-color: rgb(195, 195, 195);
+  color: #333;
+  border: none;
+  border-radius: 4px; /* Slightly smaller border radius */
+  padding: 6px 12px; /* Smaller padding */
+  margin: 8px 1px; /* Adjust margin for smaller elements */
+  font-size: 14px; /* Decreased font size */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.small-rounded-button:hover {
+  background-color: rgb(255, 203, 61);
+}
+
+.small-rounded-button:active {
+  transform: scale(0.95);
+}
+
+.small-rounded-input { 
+  margin: 1px;
+  padding: 5px 12px;
+  border: 1px solid #d1d5da;
+  border-radius: 4px; /* Slightly smaller border radius */
+  font-size: 14px; /* Decreased font size */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+  color: #24292e; 
+  background-color: #f0f0f0; /* Greyer background color */
+  transition: border-color 0.2s; 
+}
+
+/* Focus state styling */
+.small-rounded-input:focus {
+  outline: none; 
+  border-color: #000000; 
+  box-shadow: 0 0 0 2px rgba(3, 102, 213, 0.2); /* Shadow effect for focus */
+}
+
+/* Placeholder styles */
+.small-rounded-input::placeholder {
+  color: #6a737d; 
+  opacity: 1; 
+}
+
+/* Disabled state styling */
+.small-rounded-input:disabled {
+  background-color: #e0e0e0; /* Greyer disabled background */
+  color: #6a737d; 
+  border-color: #d1d5da; 
+}
+
+.fancy-rounded-button {
+  background:  rgb(255, 187, 0);
+  color: #000000; 
+  border: none;
+  border-radius: 12px; 
+  padding: 16px 32px; 
+  margin: 12px 4px; 
+  font-size: 20px; 
+  cursor: pointer; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.1s, box-shadow 0.3s; 
+}
+
+.fancy-rounded-button:hover {
+  background:  rgb(255, 203, 61);  
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fancy-rounded-button:active {
+  transform: scale(0.95); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.github-rounded-button {
+  background-color: #000000; /* Dark background */
+  color: rgb(255, 187, 0); /* Original text color */
+  border: none;
+  border-radius: 6px; 
+  padding: 8px 16px;
+  margin: 10px 2px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.1s; 
+  display: flex; /* Flexbox to align items */
+  align-items: center; /* Vertically center the logo and text */
+}
+
+.github-rounded-button:hover {
+  background-color: #28a745; 
+} 
+
+.github-rounded-button:active {
+  transform: scale(0.95); 
+}
+
+.github-rounded-button img {
+  margin-right: 8px; /* Space between the logo and text */
+}
