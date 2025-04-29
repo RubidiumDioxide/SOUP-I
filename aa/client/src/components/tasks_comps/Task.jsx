@@ -11,7 +11,7 @@ export default function Task({task, task:{id, projectId, creatorId, creatorName,
       <td>
         <Link to={`/user/${assigneeId}`}>{assigneeName}</Link>
       </td>
-      <td>{(isComplete===true)?"Done":"In progress"}</td>  
+      <td>{(isComplete===true)?"Заершена":"В процессе"}</td>  
     </tr>
   )
 } 

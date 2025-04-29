@@ -58,15 +58,40 @@ namespace aa.Controllers
         [HttpGet("Ratio/ByProject/{projectId}")]
         public async Task<ActionResult<double>> GetTasksRatioByProject(int projectId)
         {
-            var done = await (from task in context.Tasks
-                              where task.ProjectId == projectId && task.IsComplete
-                              select task.Id).ToListAsync();
+            var projectTasks = context.Tasks.Where(task => task.ProjectId == projectId);
 
-            var all = await (from task in context.Tasks
-                             where task.ProjectId == projectId 
-                             select task.Id).ToListAsync();
+            int doneCount = await projectTasks
+                .Where(task => task.IsComplete)
+                .CountAsync();
 
-            return done.Count / all.Count; 
+            int allCount = await projectTasks.CountAsync();
+
+            if (allCount == 0) // if no tasks yet 
+                return Ok(-1); 
+
+            double ratio = (double)doneCount / allCount;
+
+            return Ok(ratio); 
+        }
+
+        // GET: api/Tasks/Ratio/ByUser/5
+        [HttpGet("Ratio/ByUser/{userId}")]
+        public async Task<ActionResult<double>> GetTasksRatioByUser(int userId)
+        {
+            var userTasks = context.Tasks.Where(task => task.AssigneeId == userId);
+
+            int doneCount = await userTasks
+                .Where(task => task.IsComplete)
+                .CountAsync();
+
+            int allCount = await userTasks.CountAsync();
+
+            if (allCount == 0) // if no tasks yet 
+                return Ok(-1);
+
+            double ratio = (double)doneCount / allCount;
+
+            return Ok(ratio);
         }
 
 

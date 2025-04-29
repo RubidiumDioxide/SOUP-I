@@ -8,13 +8,15 @@ import Finish from './Finish';
 import TeamsTable from "../teams_comps/TeamsTable";
 import TasksTable from "../tasks_comps/TasksTable";
 import ActionsTable from "../actions_comps/ActionsTable";
+import CompletionBar from "../CompletionBar";
 
 
 export default function IndProject() { 
   const id = window.location.pathname.split('/')[3]; 
   const uri = `/api/projects/fordisplay/${id}`; 
   const [project, setProject] = useState(null); // gets ProjectForDisplayDto!
-  const [repository, setRepository] = useState(null);    
+  const [repository, setRepository] = useState(null); 
+  const [ratio, setRatio] = useState(0);    
   const [refreshCond, setRefreshCond] = useState([true]);
   const [isEditing, setIsEditing] = useState(false); 
   const [isRequesting, setIsRequesting] = useState(false); 
@@ -32,10 +34,30 @@ export default function IndProject() {
   }, refreshCond) 
 
   useEffect(() => {
+    // set IsCreator
     fetch(uri)
       .then(response => response.json())
       .then(p => setIsCreator(p.creatorId == sessionStorage.getItem("savedUserID")))
 
+    //set Ratio
+    fetch(`/api/tasks/ratio/byproject/${id}`)
+      .then(response => {
+        if (!response.ok) {
+          console.error('Error fetching ratio');
+          return null; 
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data !== null) {
+          setRatio(data); 
+        }
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+      });
+
+    //set isInTeam
     fetch(`/api/users/isinteam/${Number(sessionStorage.getItem("savedUserID"))}/${id}`)
       .then(response => { 
         if(response.ok){
@@ -62,7 +84,7 @@ export default function IndProject() {
       .catch(error => {
         console.error('Fetch error:', error);
       });
-  }, [])
+    }, []);
 
   function onAction(){
     if(isEditing){
@@ -93,11 +115,13 @@ export default function IndProject() {
         <div className="app-div">
           <div className="app-div">
             <h1 align="center">{project.name}</h1>
-
             <p align="center">{"Проект, начатый "}    
               <Link to={`/user/${project.creatorId}`}>{project.creatorName}</Link>
             </p>
-          
+
+            {/* CompletionBar for tasks */}
+            <CompletionBar ratio={ratio}/>
+            
             <p>{project.description}</p> 
 
             {/* Edit button */}
