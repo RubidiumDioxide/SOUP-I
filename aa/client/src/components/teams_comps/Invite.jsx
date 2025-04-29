@@ -64,7 +64,7 @@ export default function Invite({projectId, onAction}) {
                     <option value='Системный аналитик'>Системный аналитик</option>
                 </select>
 
-                <button class='rounded-button' type="submit">Send invite to user</button>
+                <button class='rounded-button' type="submit">Отправить приглашение </button>
             </form>
         </div>
     )

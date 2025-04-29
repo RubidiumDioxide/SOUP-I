@@ -7,8 +7,7 @@ const userID = sessionStorage.getItem("savedUserID");
 
 
 export default function MyTasksPage(){
-    const [ratio, setRatio] = useState(0); 
-
+    /*const [ratio, setRatio] = useState(0); 
 
     useEffect(() => {
         //set Ratio
@@ -28,8 +27,8 @@ export default function MyTasksPage(){
             .catch(error => {
                 console.error('Fetch error:', error);
             });
-    }, [])
-
+    }, [])*/
+    
 
     return(
         <div className="app-div">

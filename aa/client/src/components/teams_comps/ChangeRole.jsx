@@ -62,7 +62,7 @@ export default function ChangeRole({team, onAction}) {
                     <option value='Системный аналитик'>Системный аналитик</option>
                 </select>
 
-                <button class='rounded-button' type="submit">Submit Changes</button>
+                <button class='rounded-button' type="submit">Сохранить изменения</button>
             </form>
         </div>
     )

@@ -37,7 +37,7 @@ export default function IndTask() {
         //if task is loaded and should be viewed 
         <div className="app-div">
           <h1>{task.name}</h1>
-          <h4>{task.isComplete?"Finished":"In progress"}</h4>
+          <h4>{task.isComplete?"Завершена":"В процессе"}</h4>
           <p>
             A part of <Link to={`/project/${task.projectId}`}>{task.projectName}</Link>
             </p>

@@ -105,10 +105,10 @@ export default function Notification({notification, notification:{id, projectId,
 
       <p>
         <button class='rounded-button' onClick={Accept}>
-          Accept
+          Принять 
         </button>
         <button class='rounded-button' onClick={Decline}>
-          Decline
+          Отклонить 
         </button>
       </p>
     </div>

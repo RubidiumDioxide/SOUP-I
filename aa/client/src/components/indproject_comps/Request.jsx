@@ -59,7 +59,7 @@ export default function Request({project, senderId}) {
                     <option value='Системный аналитик'>Системный аналитик</option>
                 </select>
 
-                <button class='rounded-button' type="submit">Send request to participate</button>
+                <button class='rounded-button' type="submit">Отправить заявку на вступление в команду</button>
             </form>
         </div>
     )

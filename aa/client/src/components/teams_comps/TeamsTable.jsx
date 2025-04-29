@@ -69,7 +69,7 @@ return (
 
 
     {(teams.length == 0)? 
-    <p>No members yet</p>  
+    <p>Здесь пока нет участников </p>  
     :
     <table>
       <thead>

@@ -59,7 +59,7 @@ return (
     </div> : null}
 
     {(tasks.length == 0)?
-    <p>У вас нет задач</p>
+    <p>Здесь пока нет задач</p>
     : 
     <table>
       <thead>

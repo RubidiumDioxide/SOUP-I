@@ -83,7 +83,7 @@ export default function ProjetcsTable({type}) {
       }
 
       {(projects.length == 0)? 
-      <p>No projects yet</p>  
+      <p>Тут еще нет проектов</p>  
       :
       <div className="catalog">
         {projects.map(project =>

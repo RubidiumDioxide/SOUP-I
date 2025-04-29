@@ -63,13 +63,13 @@ export default function Add({projectId, onAction}) {
                 <input class='rounded-input' type="text" name="description" placeholder="описание" value={addForm.description} onChange={handleFormChange}/>
 
                 <select class='rounded-select' value={addForm.assigneeName} name="assigneeName" onChange={handleFormChange}>
-                    <option value="">Select Assignee</option> 
+                    <option value="">Выберите исполнителя</option> 
                     {teammates.map(teammate => 
                         <option key={teammate} value={teammate.toString()}>{teammate}</option>
                     )}    
                 </select>
                 
-                <button class='rounded-button' type="submit">Add Task</button>
+                <button class='rounded-button' type="submit">Добавить задачу</button>
             </form>
         </div>
         :

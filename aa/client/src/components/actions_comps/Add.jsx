@@ -7,16 +7,6 @@ export default function Add({projectId, taskId, onAction}) {
         commit : ''
     }); 
 
-    useEffect(() => {
-        /*fetch(`/api/Users/${sessionStorage.getItem('savedUserID')}`)
-            .then(response => response.json())
-            .then(data => setUser(data))
-
-        fetch(`/api/Teams/ForDisplay/Project/${projectId}`)
-            .then(response => response.json())
-            .then(data => setTeammates(data));*/ 
-    }, [])
-
     function handleFormChange(e){
         setAddForm({
           ...addForm, 
@@ -70,7 +60,7 @@ export default function Add({projectId, taskId, onAction}) {
                 <input class='rounded-input' type="text" name="commit" placeholder="gtihub коммит" value={addForm.commit} onChange={handleFormChange}/>
                 
                 <div class='app-div'>
-                    <button class='rounded-button' type="submit">{(type == 'add')?'Добавить действие':'Добавить действие и завершить задачу'}</button>
+                    <button class='rounded-button' type="submit">'Добавить действие'</button>
                 </div>
             </form>
         </div>
