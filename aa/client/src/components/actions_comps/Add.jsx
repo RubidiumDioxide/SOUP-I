@@ -1,6 +1,6 @@
 import {React, useEffect, useState} from 'react'
 
-export default function AddFinish({projectId, taskId, onAction, type}) { 
+export default function Add({projectId, taskId, onAction}) { 
     const userId = Number(sessionStorage.getItem('savedUserID'));   
     const [addForm, setAddForm] = useState({
         description : '', 
@@ -61,16 +61,6 @@ export default function AddFinish({projectId, taskId, onAction, type}) {
                     alert("Ошибка при добавлении действия. Перепроверьте введенные данные")
                 }
             })
-
-        if(type == "finish"){
-            fetch(`/api/Tasks/Complete/${taskId}`, {
-                method : "PUT", 
-                headers : {
-                    "Content-Type" : "application/json"
-                } 
-            })
-                .then(onAction)
-        }
     }
 
     return (

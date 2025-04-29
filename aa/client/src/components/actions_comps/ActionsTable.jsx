@@ -1,14 +1,13 @@
 import React, { use, useEffect, useState } from "react";
 
 import Action from "./Action"; 
-import AddFinish from "./AddFinish"; 
-//import Finish from "./Finish"; 
+import Add from "./Add"; 
+import Finish from "./Finish"; 
 
 
 export default function ActionsTable({projectId, taskId, actorId, isTaskComplete, type, onAction, refreshCond, isProjectComplete}) {
   const [actions, setActions] = useState([]);  
   const [isAdding, setIsAdding] = useState(false); 
-  const [isFinishing, setIsFinishing] = useState(false);  
 
   var uri
   if(type=="byproject"){
@@ -41,33 +40,25 @@ export default function ActionsTable({projectId, taskId, actorId, isTaskComplete
     setIsAdding(!isAdding); 
   }
 
-  function changeFinishing(){
-    if(isAdding){
-      setIsAdding(false); 
-    }
-    
-    setIsFinishing(!isFinishing); 
-  }
-
 return (
   <div class='app-div'>
     {(type == 'bytask')?
       (!isTaskComplete && !isProjectComplete)? 
         <>
-          <button class='rounded-button'onClick={changeFinishing}> 
-            Завершить задачу              
-          </button>
+          <Finish 
+            taskId={taskId} 
+            onAction={onAction}  
+          />
 
           <button class='rounded-button' onClick={changeAdding}> 
             Добавить действие
           </button>
             
-          {(isAdding || isFinishing)?
-          <AddFinish
+          {(isAdding)?
+          <Add
             projectId={projectId} 
             taskId={taskId} 
             onAction={onAction}
-            type={(isFinishing)?"finish":"add"}
           />
           : 
           null}
@@ -96,7 +87,7 @@ return (
           }
           <th>Описание</th>
           <th>Исполнитель</th>
-          <th>Github коммит</th>
+          <th>Коммит</th>
           <th>Дата и время</th>
         </tr>
       </thead>

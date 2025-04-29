@@ -130,8 +130,8 @@ namespace aa.Controllers
             return NoContent();
         }
 
-        // PUT: api/Tasks/Complete/5
-        [HttpPut("Complete/{id}")]
+        // PATCH: api/Tasks/Complete/5
+        [HttpPatch("Complete/{id}")]
         public async Task<IActionResult> PutTaskComplete(int id)
         {
             var task = await context.Tasks.FindAsync(id);
@@ -152,7 +152,7 @@ namespace aa.Controllers
                 return NotFound();
             }
 
-            return NoContent();
+            return Ok();
         }
 
 

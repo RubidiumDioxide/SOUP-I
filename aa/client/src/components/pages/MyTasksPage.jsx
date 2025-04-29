@@ -33,7 +33,7 @@ export default function MyTasksPage(){
 
     return(
         <div className="app-div">
-            <CompletionBar ratio={ratio}/>
+            {/* как будто оно здесь не надо на самом-то деле <CompletionBar ratio={ratio}/>*/}
             <TasksTable
               type="byassignee"
             />
