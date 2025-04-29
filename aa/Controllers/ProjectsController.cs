@@ -47,30 +47,6 @@ namespace aa.Controllers
                           .ToListAsync();  
         }
 
-        /* MARKED FOR DELETION, OBSOLETE
-        // GET: api/Projects/Creators/5
-        [HttpGet("Creators/{userId}")]
-        public async Task<ActionResult<IEnumerable<ProjectDto>>> GetCreatorsProjects(int userId)
-        {
-            return await context.Projects
-                .Where(p => p.Creator == userId)
-                .Select(p => new ProjectDto(p))
-                .ToListAsync();
-        }*/
-
-        /* MARKED FOR DELETION, OBSOLETE
-        // GET: api/Projects/ForDisplay/Creators/5
-        [HttpGet("ForDisplay/Creators/{userId}")]
-        public async Task<ActionResult<IEnumerable<ProjectForDisplayDto>>> GetProjectsForDisplayCreators(int userId)
-        {
-            return await context.Projects
-                .Where(p => p.Creator == userId).Join(context.Users,
-                    p => p.Creator,
-                    u => u.Id,
-                    (p, u) => new ProjectForDisplayDto(p, u.Name)
-                ).ToListAsync();
-        }*/
-
         // GET: api/Projects/ForDisplay/Participants/5
         [HttpGet("ForDisplay/Participants/{userId}")]
         public async Task<ActionResult<IEnumerable<ProjectForDisplayDto>>> GetProjectsForDisplayParticipants(int userId)
@@ -130,7 +106,6 @@ namespace aa.Controllers
             return new ProjectForDisplayDto(project, creator.Name);
         }
 
-
         // PUT          -- changes name, description & satedeadline only  
         [HttpPut("{id}")]
         public async Task<ActionResult<ProjectDto>> PutProject(int id, ProjectDto projectdto)
@@ -164,21 +139,18 @@ namespace aa.Controllers
         }
 
 
-        // PUT          -- finishes project 
-        [HttpPut("Finish/{id}")]
-        public async Task<ActionResult<ProjectDto>> FinishProject(int id, ProjectDto projectdto)
+        // PATCH          -- finishes project 
+        [HttpPatch("Finish/{id}")]
+        public async Task<ActionResult<ProjectDto>> FinishProject(int id)
         {
-            if (id != projectdto.Id)
-            {
-                return BadRequest();
-            }
-
             var project = await context.Projects.FindAsync(id);
-            if (project == null)
-            {
-                return NotFound();
-            }
 
+            if (project == null)
+                return NotFound();
+
+            if (project.IsComplete)
+                return BadRequest("Project is already finished."); 
+            
             project.IsComplete = true; 
             project.DateFinished = DateTime.Now; 
          

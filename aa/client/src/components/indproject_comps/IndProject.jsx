@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import Edit from './Edit';
 import Request from "./Request"; 
 import Attach from './Attach'; 
+import Finish from './Finish'; 
 import TeamsTable from "../teams_comps/TeamsTable";
 import TasksTable from "../tasks_comps/TasksTable";
 import ActionsTable from "../actions_comps/ActionsTable";
@@ -90,7 +91,7 @@ export default function IndProject() {
       (project)?
         //if project is loaded 
         <div className="app-div">
-          <div className="page-div">
+          <div className="app-div">
             <h1 align="center">{project.name}</h1>
 
             <p align="center">{"Проект, начатый "}    
@@ -99,6 +100,7 @@ export default function IndProject() {
           
             <p>{project.description}</p> 
 
+            {/* Edit button */}
             {isCreator?
               <>  
                 {(isEditing)? 
@@ -113,7 +115,8 @@ export default function IndProject() {
               :
               null
             }
-          
+
+            {/* Request button */}
             {(!isCreator && !project.isComplete)?
             <>
               <button class='rounded-button' onClick={changeRequestState}>
@@ -132,7 +135,8 @@ export default function IndProject() {
             :
             null}
 
-            {(isCreator || isInTeam)? 
+            {/* Attaching repository */}
+            {((isCreator || isInTeam) && !project.isComplete)? 
               <>
               {(repository != null && repository != undefined)?
                 <button class='github-rounded-button'>
@@ -163,6 +167,16 @@ export default function IndProject() {
             null
             }
           </div>
+
+          {/* Finish button */}
+          {(isCreator && !project.isComplete)?
+            <Finish
+              project={project}
+              onAction={onAction}
+            /> 
+            :
+            null
+          }
 
           {(isCreator || isInTeam)? 
           <>
