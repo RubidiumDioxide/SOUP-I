@@ -171,7 +171,7 @@ function App() {
   )
 
   return (
-    <div class="app">
+    <div className="app">
       <p>Current user type: {appState.usertype} </p>
       <p>Current userID: {appState.userID} </p>
       <RouterProvider router={appRouter}/>

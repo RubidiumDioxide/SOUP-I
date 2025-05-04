@@ -12,12 +12,12 @@ export default function Header(){
   return (
     <header>
       <nav>
-        <Link to="/welcome" class="nav-link">Вход и регистрация</Link>
-        <Link to="/allprojects" class="nav-link">Все проекты</Link>
-        <Link to={`/user`} class="nav-link">Мой профиль</Link>
-        <Link to="/myprojects" class="nav-link">Мои проекты</Link>
-        <Link to="/mytasks" class="nav-link">Мои задачи</Link>
-        <Link to="/notifications" class="nav-link">Уведомления</Link>
+        <Link to="/welcome" className="nav-link">Вход и регистрация</Link>
+        <Link to="/allprojects" className="nav-link">Все проекты</Link>
+        <Link to={`/user`} className="nav-link">Мой профиль</Link>
+        <Link to="/myprojects" className="nav-link">Мои проекты</Link>
+        <Link to="/mytasks" className="nav-link">Мои задачи</Link>
+        <Link to="/notifications" className="nav-link">Уведомления</Link>
       </nav>
     </header>
   )

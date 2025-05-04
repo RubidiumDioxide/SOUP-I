@@ -39,11 +39,11 @@ export default function IndTask() {
           <h1>{task.name}</h1>
           <h4>{task.isComplete?"Завершена":"В процессе"}</h4>
           <p>
-            A part of <Link to={`/project/${task.projectId}`}>{task.projectName}</Link>
+             Создана в рамках проекта <Link to={`/project/${task.projectId}`}>{task.projectName}</Link>
             </p>
           <h4>{task.description}</h4>
           <p> 
-            Assigned to <Link to={`/user/${task.assigneeId}`}>{task.assigneeName}</Link> by <Link to={`/user/${task.creatorId}`}>{task.creatorName}</Link>
+            Выдана пользователю <Link to={`/user/${task.assigneeId}`}>{task.assigneeName}</Link> пользователем <Link to={`/user/${task.creatorId}`}>{task.creatorName}</Link>
           </p> 
 
           <ActionsTable

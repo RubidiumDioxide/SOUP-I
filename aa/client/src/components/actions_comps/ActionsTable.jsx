@@ -33,10 +33,6 @@ export default function ActionsTable({projectId, taskId, actorId, isTaskComplete
   }, [refreshCond])
 
   function changeAdding(){
-    if(isFinishing){
-      setIsFinishing(false); 
-    }
-    
     setIsAdding(!isAdding); 
   }
 
